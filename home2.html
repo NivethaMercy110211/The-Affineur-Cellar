@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="The Affineur Cellar Home 2 — Discover what it means to be an affineur, explore our cheese varieties, and learn how the aging journey works."/>
+  <title>Home 2 — The Affineur Cellar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <script>!function(){var t=localStorage.getItem('acTheme')||'light',d=localStorage.getItem('acDir')||'ltr';document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('dir',d)}()</script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="site-header">
+  <div class="header-inner container">
+    <a href="index.html" class="logo" id="logo">
+      <span class="logo-icon">&#9670;</span>
+      <div class="logo-text">
+        <span class="logo-main">The Affineur Cellar</span>
+        <span class="logo-sub">Artisan Cheese Aging</span>
+      </div>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item" data-has-dropdown>
+          <a href="index.html" class="nav-link active" data-dropdown aria-haspopup="true" aria-expanded="false">Home <span class="nav-caret">&#9660;</span></a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-link">Home 1</a>
+            <a href="home2.html" class="dropdown-link active">Home 2</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="aging-process.html" class="nav-link">Aging Process</a></li>
+        <li class="nav-item"><a href="origins.html" class="nav-link">Origins</a></li>
+        <li class="nav-item"><a href="tasting-boxes.html" class="nav-link">Tasting Boxes</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link nav-login-btn">Login</a></li>
+      </ul>
+      <div class="theme-dir-toggles" id="theme-dir-toggles">
+        <button class="toggle-btn" data-theme-toggle aria-label="Switch theme" title="Dark Mode"></button>
+        <button class="toggle-btn" data-dir-toggle aria-label="Switch direction" title="Switch to RTL"></button>
+      </div>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<main>
+
+<!-- ===== SECTION 1 — HERO (centered) ===== -->
+<section class="page-banner banner-medium" id="hero-h2">
+  <div class="banner-bg" style="background-image:url('images/home2_hero.png')"></div>
+  <div class="banner-overlay center-overlay"></div>
+  <div class="banner-content center-content container">
+    <div class="banner-badge" data-animate="fade-down">Artisan · Cave-Aged · Heritage</div>
+    <h1 class="banner-title" style="text-align:center">Crafted by Time,<br/><em>Perfected by Hand</em></h1>
+    <p class="banner-subtitle" style="text-align:center;margin:0 auto var(--space-lg)">The Affineur Cellar is a living, breathing cave where the ancient art of cheese maturation is practised with uncompromising dedication.</p>
+    <div class="banner-actions" style="justify-content:center">
+      <a href="about.html" class="btn btn-primary">Our Story <span class="btn-arrow">&#8594;</span></a>
+      <a href="tasting-boxes.html" class="btn btn-ghost">Shop Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 2 — WHAT IS AN AFFINEUR ===== -->
+<section class="section" id="what-is">
+  <div class="container">
+    <div class="two-col-grid">
+      <div class="content-block" data-animate="fade-right">
+        <span class="section-tag">The Craft</span>
+        <h2 class="section-title">What Is an<br/><em>Affineur?</em></h2>
+        <p class="body-text">An affineur is neither a cheesemaker nor a retailer — we occupy the space in between. We receive young, freshly pressed wheels from our farm partners, and through months of dedicated cellar work, we guide them to their peak of flavour.</p>
+        <p class="body-text">The word comes from the French <em>affiner</em> — to refine, to perfect. It is an ancient craft that demands equal parts science and intuition. The affineur reads each wheel like a text — its weight, its aroma, the sound when tapped — and responds accordingly.</p>
+        <div class="numbered-list mt-md">
+          <div class="numbered-item"><span class="n-num">01</span><div><h4 class="n-title">Receive &amp; Assess</h4><p class="n-body">Young wheels arrive from partner farms and are evaluated for moisture, pH, and rind integrity.</p></div></div>
+          <div class="numbered-item"><span class="n-num">02</span><div><h4 class="n-title">Age &amp; Tend</h4><p class="n-body">Weeks and months of turning, brushing, and monitoring in our stone cellar environment.</p></div></div>
+          <div class="numbered-item"><span class="n-num">03</span><div><h4 class="n-title">Taste &amp; Release</h4><p class="n-body">Only wheels that meet our tasting benchmark are released — nothing before its time.</p></div></div>
+        </div>
+      </div>
+      <div class="img-frame aspect-4-5" data-animate="fade-left">
+        <img src="images/about_story.png" alt="Atmospheric cellar interior with aged cheese wheels on wooden shelves" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3 — CELLAR PANORAMIC ===== -->
+<section class="section section-dark" id="cellar-feature">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag light">The Heart of Our Work</span>
+      <h2 class="section-title light">A Living,<br/><em>Breathing Cave</em></h2>
+      <p class="section-intro light">Our cellar is carved from the same Burgundy limestone as the vineyards above it. Constant at 12°C and 95% humidity, it is the ideal environment for the slow miracle of aging.</p>
+    </div>
+    <div class="img-wide aspect-16-5" data-animate="zoom-in">
+      <img src="images/tasting_table.png" alt="Panoramic view of the cheese aging cave corridor with rows of wheels" loading="lazy"/>
+    </div>
+    <div class="stats-strip" data-animate="fade-up">
+      <div class="stat-box"><span class="stat-num">12°C</span><span class="stat-label">Cave Temperature</span></div>
+      <div class="stat-box"><span class="stat-num">95%</span><span class="stat-label">Humidity Year-Round</span></div>
+      <div class="stat-box"><span class="stat-num">800+</span><span class="stat-label">Wheels Aging Now</span></div>
+      <div class="stat-box"><span class="stat-num">24mo</span><span class="stat-label stat-label-maturation">Max<br class="maturation-tablet-break"/>Maturation</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4 — CHEESE VARIETIES ===== -->
+<section class="section section-cream" id="cheese-varieties">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">Our Repertoire</span>
+      <h2 class="section-title">The Varieties<br/><em>We Age</em></h2>
+      <p class="section-intro">From delicate bloomy rinds to robust cave-aged alpines — our cellar holds wheels at every stage of a remarkable journey.</p>
+    </div>
+    <div class="two-col-grid" style="align-items:start">
+      <div class="img-frame aspect-1-1" data-animate="fade-right">
+        <img src="images/grazing_board.png" alt="Multiple artisan cheese varieties arranged on rustic wooden board" loading="lazy"/>
+      </div>
+      <div data-animate="fade-left">
+        <div class="cards-2 repertoire-grid" style="gap:var(--space-sm)">
+          <div class="feat-card" style="padding:var(--space-md)">
+            <div class="feat-icon">&#127784;</div>
+            <h3 class="feat-title" style="font-size:1rem">Bloomy Rind</h3>
+            <p class="feat-body" style="font-size:.88rem">Penicillium candidum develops a downy white coat. Aged 21–60 days. Creamy, mushroomy, and delicate.</p>
+          </div>
+          <div class="feat-card" style="padding:var(--space-md)">
+            <div class="feat-icon">&#127806;</div>
+            <h3 class="feat-title" style="font-size:1rem">Washed Rind</h3>
+            <p class="feat-body" style="font-size:.88rem">Regularly bathed in brine or wine. Aged 4–12 weeks. Orange rind, pungent aroma, surprisingly mild paste.</p>
+          </div>
+          <div class="feat-card" style="padding:var(--space-md)">
+            <div class="feat-icon">&#9925;</div>
+            <h3 class="feat-title repertoire-alpine-title" style="font-size:1rem">Hard Alpine</h3>
+            <p class="feat-body" style="font-size:.88rem">Our flagship category. Aged 6–24 months. Dense, crystalline, complex — butterscotch and roasted hazelnut.</p>
+          </div>
+          <div class="feat-card" style="padding:var(--space-md)">
+            <div class="feat-icon">&#128140;</div>
+            <h3 class="feat-title repertoire-blue-title" style="font-size:1rem">Blue-Veined</h3>
+            <p class="feat-body" style="font-size:.88rem">Penicillium roqueforti pierces through the paste. Aged 3–6 months. Intense, tangy, deeply savoury.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 5 — HOW IT WORKS (timeline) ===== -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">The Journey</span>
+      <h2 class="section-title">From Farm to<br/><em>Your Table</em></h2>
+      <p class="section-intro">Each cheese in our cellar travels a carefully managed path from pasture to box — a journey that can last anywhere from 45 days to two full years.</p>
+    </div>
+    <div class="timeline" data-animate="fade-up">
+      <div class="timeline-step">
+        <div class="timeline-dot">&#127803;</div>
+        <div class="timeline-label">Step 1</div>
+        <div class="timeline-val">Farm & Milking</div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-dot">&#127851;</div>
+        <div class="timeline-label">Step 2</div>
+        <div class="timeline-val">Press & Form</div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-dot">&#127979;</div>
+        <div class="timeline-label">Step 3</div>
+        <div class="timeline-val">Cave Aging</div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-dot">&#127873;</div>
+        <div class="timeline-label">Step 4</div>
+        <div class="timeline-val">Curated & Shipped</div>
+      </div>
+    </div>
+    <div class="img-wide aspect-16-6 mt-lg" data-animate="zoom-in">
+      <img src="images/wine_pairing.png" alt="Artisan cheese and wine pairing spread on slate board" loading="lazy"/>
+      <p class="img-caption">Cellar selection with accompanying wine notes — a guide to our flavour pairings</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 6 — CHEESE PAIRING GUIDE ===== -->
+<section class="section section-dark" id="pairing-guide-h2">
+  <div class="container">
+    <div class="seasonal-grid">
+      <div data-animate="fade-right">
+        <span class="section-tag light">Pairing Guide</span>
+        <h2 class="section-title light">How to Taste<br/><em>a Cellar Selection</em></h2>
+        <p class="body-text light-text">Approach our cheeses from mildest to most intense. Allow each wheel to rest at room temperature for 30 minutes before tasting — cold suppresses aroma and flavour.</p>
+        <div class="numbered-list mt-md" style="border-color:rgba(253,248,240,.1)">
+          <div class="numbered-item pairing-start-mild" style="border-color:rgba(253,248,240,.08)"><span class="n-num" style="color:rgba(220,196,138,.4)">01</span><div><h4 class="n-title" style="color:var(--cream-200)">Start Mild</h4><p class="n-body light-text">Begin with bloomy or fresh styles before progressing to alpine and blue-veined wheels.</p></div></div>
+          <div class="numbered-item" style="border-color:rgba(253,248,240,.08)"><span class="n-num" style="color:rgba(220,196,138,.4)">02</span><div><h4 class="n-title" style="color:var(--cream-200)">No Metal</h4><p class="n-body light-text">Use wooden boards and ceramic knives — metal can impart an off-flavour to delicate rinds.</p></div></div>
+          <div class="numbered-item" style="border-color:rgba(253,248,240,.08)"><span class="n-num" style="color:rgba(220,196,138,.4)">03</span><div><h4 class="n-title" style="color:var(--cream-200)">Pair Simply</h4><p class="n-body light-text">Our cellar notes suggest ideal wine, bread, and fruit pairings for each cheese in your box.</p></div></div>
+        </div>
+        <a href="tasting-boxes.html" class="btn btn-cream mt-md">Order a Tasting Box</a>
+      </div>
+      <div class="img-frame aspect-4-5" data-animate="fade-left">
+        <img src="images/tasting_notes.png" alt="Handwritten cheese tasting journal and notes" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 7 — AWARDS & RECOGNITION ===== -->
+<section class="section section-cream" id="awards-h2">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">Recognition</span>
+      <h2 class="section-title">Awards &amp;<br/><em>Press Features</em></h2>
+      <p class="section-intro">Our cellar has been recognised by some of the most respected voices in European artisan food culture.</p>
+    </div>
+    <div class="awards-row" data-animate="fade-up">
+      <div class="award-item"><span class="award-icon">&#127942;</span><div class="award-title">Best Affineur 2023</div><p class="award-desc">Concours International du Fromage</p></div>
+      <div class="award-item"><span class="award-icon">&#11088;</span><div class="award-title">5-Star Rating</div><p class="award-desc">Slow Food Guide to Cheese</p></div>
+      <div class="award-item"><span class="award-icon">&#128214;</span><div class="award-title">Featured In</div><p class="award-desc">The World Cheese Book, 2022 Ed.</p></div>
+      <div class="award-item"><span class="award-icon">&#127881;</span><div class="award-title">Gold Medal</div><p class="award-desc">Paris Fromage Festival, 2024</p></div>
+    </div>
+    <div class="cert-row mt-lg" data-animate="fade-up" data-delay="200">
+      <div class="cert-badge"><span class="cert-icon">&#127807;</span><span class="cert-text">Raw Milk Certified</span></div>
+      <div class="cert-badge"><span class="cert-icon">&#127807;</span><span class="cert-text">Slow Food Partner Farm</span></div>
+      <div class="cert-badge"><span class="cert-icon">&#9745;</span><span class="cert-text">AOC / AOP Compliant</span></div>
+      <div class="cert-badge"><span class="cert-icon">&#127758;</span><span class="cert-text">Exported to 12 Countries</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 8 — NEWSLETTER CTA ===== -->
+<section class="cta-section section-dark" id="nl-cta-h2">
+  <div class="container text-center">
+    <h2 class="cta-title" data-animate="fade-up">Stay Close to the Cave</h2>
+    <p class="cta-sub" data-animate="fade-up" data-delay="100">Subscribe to Cellar Notes — seasonal releases, affineur dispatches, and tasting event invitations. No spam, ever.</p>
+    <form class="nl-form" id="nl-form-h2" novalidate style="max-width:480px;margin:0 auto" data-animate="fade-up" data-delay="200">
+      <div class="nl-form-row">
+        <input type="email" class="nl-input" placeholder="Enter your email address" aria-label="Newsletter email" required/>
+        <button type="submit" class="nl-btn">Subscribe</button>
+      </div>
+      <span class="nl-msg" id="nl-msg-h2"></span>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="site-footer">
+  <div class="footer-main container">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9670;</span>
+        <div class="logo-text"><span class="logo-main">The Affineur Cellar</span><span class="logo-sub">Artisan Cheese Aging</span></div>
+      </a>
+      <p class="footer-desc">Handcrafted aged cheeses from our stone cellar in Burgundy, France. Every wheel is a collaboration between the affineur, the milk, and time.</p>
+            <div class="footer-social">
+        <a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.917 3.917 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+        <a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+                <a href="#" class="social-link" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="footer-heading">Navigate</h3>
+      <ul class="footer-nav-list">
+        <li><a href="index.html" class="footer-link">Home 1</a></li>
+        <li><a href="home2.html" class="footer-link">Home 2</a></li>
+        <li><a href="about.html" class="footer-link">About the Affineur</a></li>
+        <li><a href="aging-process.html" class="footer-link">Aging Process</a></li>
+        <li><a href="origins.html" class="footer-link">Milk Origins</a></li>
+        <li><a href="tasting-boxes.html" class="footer-link">Tasting Boxes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-heading">The Cellar</h3>
+      <ul class="footer-nav-list">
+        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+        <li><a href="contact.html" class="footer-link">Contact &amp; Visits</a></li>
+        <li><a href="contact.html" class="footer-link">Wholesale Inquiry</a></li>
+        <li><a href="contact.html" class="footer-link">Gift Orders</a></li>
+        <li><a href="tasting-boxes.html" class="footer-link">Custom Boxes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-heading">Cellar Notes</h3>
+      <p class="footer-nl-desc">Seasonal releases, tasting events, and cellar stories — delivered to your inbox.</p>
+      <form class="nl-form" id="footer-nl-form" novalidate>
+        <div class="nl-form-row">
+          <input type="email" class="nl-input" placeholder="Your email address" aria-label="Newsletter email" required/>
+          <button type="submit" class="nl-btn" aria-label="Subscribe">&#8594;</button>
+        </div>
+        <span class="nl-msg"></span>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner container">
+      <p class="footer-copy">&copy; <span id="footer-year"></span> The Affineur Cellar. All rights reserved.</p>
+      <nav class="footer-legal" aria-label="Legal">
+        <a href="#" class="footer-legal-link">Privacy Policy</a>
+        <a href="#" class="footer-legal-link">Terms of Service</a>
+        <a href="#" class="footer-legal-link">Shipping Info</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+<script src="script.js"></script>
+</body>
+</html>

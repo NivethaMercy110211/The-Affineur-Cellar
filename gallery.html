@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="The Affineur Cellar Gallery — A visual journey inside our cave, across our heritage farms, and through the world of artisan aged cheese."/>
+  <title>Gallery — The Affineur Cellar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <script>!function(){var t=localStorage.getItem('acTheme')||'light',d=localStorage.getItem('acDir')||'ltr';document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('dir',d)}()</script>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner container">
+    <a href="index.html" class="logo" id="logo"><span class="logo-icon">&#9670;</span><div class="logo-text"><span class="logo-main">The Affineur Cellar</span><span class="logo-sub">Artisan Cheese Aging</span></div></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item" data-has-dropdown><a href="index.html" class="nav-link" data-dropdown aria-haspopup="true" aria-expanded="false">Home <span class="nav-caret">&#9660;</span></a><div class="dropdown-menu"><a href="index.html" class="dropdown-link">Home 1</a><a href="home2.html" class="dropdown-link">Home 2</a></div></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="aging-process.html" class="nav-link">Aging Process</a></li>
+        <li class="nav-item"><a href="origins.html" class="nav-link">Origins</a></li>
+        <li class="nav-item"><a href="tasting-boxes.html" class="nav-link">Tasting Boxes</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link nav-login-btn">Login</a></li>
+      </ul>
+      <div class="theme-dir-toggles" id="theme-dir-toggles">
+        <button class="toggle-btn" data-theme-toggle aria-label="Switch theme" title="Dark Mode"></button>
+        <button class="toggle-btn" data-dir-toggle aria-label="Switch direction" title="Switch to RTL"></button>
+      </div>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+  </div>
+</header>
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<main>
+
+<!-- SECTION 1 — BANNER -->
+<section class="page-banner banner-medium" id="gallery-banner">
+  <div class="banner-bg" style="background-image:url('images/cellar_panoramic.png')"></div>
+  <div class="banner-overlay"></div>
+  <div class="banner-content container">
+    <div class="banner-badge">The Cellar Gallery</div>
+    <h1 class="banner-title">A Glimpse<br/><em>Inside the Cave</em></h1>
+    <p class="banner-subtitle" style="text-align:center;margin:0 auto var(--space-lg)">Through stone, wood, and wheel — a visual document of life in our Burgundy cellar, from milking to maturation.</p>
+    <div class="banner-actions">
+      <a href="#main-gallery" class="btn btn-primary">Browse Gallery <span class="btn-arrow">&#8594;</span></a>
+      <a href="contact.html#visit-info" class="btn btn-ghost">Visit the Cellar</a>
+    </div>
+  </div>
+  <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Gallery</span></div>
+</section>
+
+<!-- SECTION 2 — GALLERY INTRODUCTION + FILTER -->
+<section class="section section-cream" id="gallery-intro">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">Visual Journey</span>
+      <h2 class="section-title">The Cave in<br/><em>Images</em></h2>
+      <p class="section-intro">A living archive of our cellar — the cave, the process, the farms, and the finished cheeses. Every image is from our Burgundy operation.</p>
+    </div>
+    <div class="filter-tabs" data-animate="fade-up" data-delay="100">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="cave">The Cave</button>
+      <button type="button" class="filter-btn" data-filter="cheese">Cheese</button>
+      <button type="button" class="filter-btn" data-filter="farm">Farms</button>
+      <button type="button" class="filter-btn" data-filter="process">Process</button>
+      <button type="button" class="filter-btn" data-filter="product">Products</button>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 — MAIN GALLERY GRID -->
+<section class="section" id="main-gallery" style="padding-top:0">
+  <div class="container">
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--wide" data-cat="cave" data-lb data-animate="fade-up">
+        <img src="images/cellar_tools.png" alt="Traditional cheese making and aging tools on a table in the cellar" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Cellar Tools &amp; Craft</span></div>
+      </div>
+      <div class="gallery-item" data-cat="cave" data-lb data-animate="fade-up" data-delay="100">
+        <img src="images/hero_cave.png" alt="Stone walls of the aging cellar with amber lighting" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">The Cave Interior</span></div>
+      </div>
+      <div class="gallery-item" data-cat="cave" data-lb data-animate="fade-up" data-delay="200">
+        <img src="images/about_story.png" alt="Atmospheric cave with wooden shelves and warm lantern light" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Cave Atmosphere</span></div>
+      </div>
+      <div class="gallery-item" data-cat="process" data-lb data-animate="fade-up">
+        <img src="images/cave_process.png" alt="Affineur hands brushing an aged cheese wheel" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Daily Brushing</span></div>
+      </div>
+      <div class="gallery-item" data-cat="process" data-lb data-animate="fade-up" data-delay="100">
+        <img src="images/aging_rind.png" alt="Close-up macro of aged cheese rind texture and natural mold" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Rind Detail</span></div>
+      </div>
+      <div class="gallery-item" data-cat="cheese" data-lb data-animate="fade-up" data-delay="200">
+        <img src="images/cheese_varieties.png" alt="Multiple artisan cheese varieties on rustic wooden board" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Cellar Selection</span></div>
+      </div>
+      <div class="gallery-item gallery-item--wide" data-cat="farm" data-lb data-animate="fade-up">
+        <img src="images/farm_morning.png" alt="Misty morning farm scene with heritage cattle silhouettes" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Morning at Massif Farm</span></div>
+      </div>
+      <div class="gallery-item" data-cat="farm" data-lb data-animate="fade-up" data-delay="100">
+        <img src="images/milk_origins.png" alt="Heritage cattle farm at golden hour pastoral landscape" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Heritage Farms</span></div>
+      </div>
+      <div class="gallery-item" data-cat="cheese" data-lb data-animate="fade-up" data-delay="200">
+        <img src="images/cheese_collection.png" alt="Artisan cheese board flat lay with accompaniments" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Cellar Board</span></div>
+      </div>
+      <div class="gallery-item" data-cat="product" data-lb data-animate="fade-up">
+        <img src="images/tasting_box.png" alt="Artisan cheese tasting box with parchment wrapped wheels" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Tasting Box</span></div>
+      </div>
+      <div class="gallery-item" data-cat="product" data-lb data-animate="fade-up" data-delay="100">
+        <img src="images/boxes_luxury.png" alt="Premium luxury cheese gift boxes with linen ribbon" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Gift Packaging</span></div>
+      </div>
+      <div class="gallery-item" data-cat="cheese" data-lb data-animate="fade-up" data-delay="200">
+        <img src="images/cheese_pairing.png" alt="Cheese and wine pairing spread on dark slate board" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Wine &amp; Cheese Pairing</span></div>
+      </div>
+      <div class="gallery-item" data-cat="process" data-lb data-animate="fade-up">
+        <img src="images/tasting_notes.png" alt="Handwritten tasting notes journal with fountain pen" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Tasting Journals</span></div>
+      </div>
+      <div class="gallery-item" data-cat="cave" data-lb data-animate="fade-up" data-delay="100">
+        <img src="images/contact_door.png" alt="Heavy old wooden door to the aging cellar with ivy" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Cellar Entrance</span></div>
+      </div>
+      <div class="gallery-item" data-cat="cave" data-lb data-animate="fade-up" data-delay="200">
+        <img src="images/home2_hero.png" alt="Elegant overhead cheese board on rustic walnut surface" class="gallery-img" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-caption">Overhead Cellar Selection</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 — BEHIND THE SCENES -->
+<section class="section section-dark" id="behind-the-scenes">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag light">Behind the Scenes</span>
+      <h2 class="section-title light">A Day in<br/><em>the Cellar</em></h2>
+      <p class="section-intro light">The work of an affineur is quiet, daily, and deeply physical. Here is what a typical cellar day looks like.</p>
+    </div>
+    <div class="cards-3">
+      <div class="feat-card dark" data-animate="fade-up" data-delay="100">
+        <div class="feat-icon">&#127780;</div>
+        <h3 class="feat-title light">6:00 — Morning Inspection</h3>
+        <p class="feat-body light">Every wheel is walked past and assessed. Unusual rinds are flagged, new arrivals logged, and the cave is read at dawn.</p>
+      </div>
+      <div class="feat-card dark" data-animate="fade-up" data-delay="250">
+        <div class="feat-icon">&#128336;</div>
+        <h3 class="feat-title light">8:00 — Turning &amp; Brushing</h3>
+        <p class="feat-body light">Three to four hours of hand-turning and brushing from back to front. Every single wheel is handled individually.</p>
+      </div>
+      <div class="feat-card dark" data-animate="fade-up" data-delay="400">
+        <div class="feat-icon">&#127859;</div>
+        <h3 class="feat-title light">14:00 — Tasting &amp; Release</h3>
+        <p class="feat-body light">Afternoon tasting of wheels flagged for release. Detailed sensory benchmarking, box assembly, and dispatch preparation.</p>
+      </div>
+    </div>
+    <div class="two-col-grid" style="margin-top:var(--space-xl)">
+      <div class="img-frame aspect-3-2" data-animate="fade-right">
+        <img src="images/affineur_portrait.png" alt="Portrait of the head affineur checking cheese wheels in the cellar" loading="lazy"/>
+      </div>
+      <div class="content-block" data-animate="fade-left">
+        <h3 class="section-title light" style="font-size:1.5rem">What You Don't<br/><em>See in the Box</em></h3>
+        <p class="body-text light-text">Every wheel that arrives in your tasting box has been turned by hand between 40 and 200 times during its life in our cave, depending on its style and maturation time. It has been brushed, inspected, weighed, and tasted multiple times. The cellar notes card in your box is a summary of that entire journey — written by the person who tended it.</p>
+        <p class="body-text light-text">We believe the story matters as much as the cheese. Which is why every box includes the affineur's personal tasting notes — not marketing language, but the actual observations made during the maturation of your specific batch.</p>
+        <a href="about.html" class="btn btn-cream mt-md">Meet the Affineur</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 — SEASONAL GALLERY FEATURE -->
+<section class="section" id="seasonal-gallery">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">Autumn in the Cave</span>
+      <h2 class="section-title">The Current<br/><em>Seasonal Collection</em></h2>
+      <p class="section-intro">Our cave changes with the seasons — here is what is currently at peak maturation and available for order.</p>
+    </div>
+    <div class="two-col-grid">
+      <div class="img-frame aspect-4-5" data-animate="fade-right">
+        <img src="images/seasonal_collection.png" alt="Autumn seasonal cheese board with figs, pomegranate and aged wheels" loading="lazy"/>
+      </div>
+      <div class="content-block" data-animate="fade-left">
+        <ul class="seasonal-list" style="color:var(--brown-200)">
+          <li class="seasonal-item" style="color:var(--brown-200)"><span class="s-dot" style="background:var(--brown-200)"></span><div><strong style="color:var(--brown-300)">Grand Vieux de la Cave</strong> — 18-month alpine cow, raw milk, butterscotch notes. Limited to 30 wheels.</div></li>
+          <li class="seasonal-item" style="color:var(--brown-200)"><span class="s-dot" style="background:var(--brown-200)"></span><div><strong style="color:var(--brown-300)">Brebis de Vendange</strong> — Ewe wheel washed in Pinot Noir marc, funky and fruity. Selected autumn release.</div></li>
+          <li class="seasonal-item" style="color:var(--brown-200)"><span class="s-dot" style="background:var(--brown-200)"></span><div><strong style="color:var(--brown-300)">Cendre du Causse</strong> — Ash-rolled goat log, 45 days, lemony cream paste with a rustic charcoal rind.</div></li>
+          <li class="seasonal-item" style="color:var(--brown-200)"><span class="s-dot" style="background:var(--brown-200)"></span><div><strong style="color:var(--brown-300)">Buffalo Stagionato</strong> — 90-day water buffalo wheel, first rich harvest release of this autumn season.</div></li>
+          <li class="seasonal-item" style="color:var(--brown-200)"><span class="s-dot" style="background:var(--brown-200)"></span><div><strong style="color:var(--brown-300)">Tomme du Jura</strong> — 6-month alpine cow wheel, raw milk, earthy wild mushrooms and autumn forest floor.</div></li>
+          <li class="seasonal-item" style="color:var(--brown-200)"><span class="s-dot" style="background:var(--brown-200)"></span><div><strong style="color:var(--brown-300)">Bleu de la Roche</strong> — Blue-veined ewe cheese, rich and buttery, cave-aged for ninety full autumn days.</div></li>
+        </ul>
+        <a href="tasting-boxes.html" class="btn btn-outline mt-md">Order the Harvest Box <span class="btn-arrow">&#8594;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6 — PRESS FEATURES -->
+<section class="section section-cream" id="press">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">In the Press</span>
+      <h2 class="section-title">As Featured<br/><em>In</em></h2>
+    </div>
+    <div class="awards-row" data-animate="zoom-in">
+      <div class="award-item"><span class="award-icon">&#128240;</span><div class="award-title">Le Monde</div><p class="award-desc">"A cellar unlike any other in Burgundy"</p></div>
+      <div class="award-item"><span class="award-icon">&#127759;</span><div class="award-title">The Guardian</div><p class="award-desc">"Europe's finest affineur"</p></div>
+      <div class="award-item"><span class="award-icon">&#128214;</span><div class="award-title">World Cheese Book</div><p class="award-desc">Featured, 2022 Edition</p></div>
+      <div class="award-item"><span class="award-icon">&#127942;</span><div class="award-title">Slow Food</div><p class="award-desc">Presidia partner, 2019–present</p></div>
+      <div class="award-item"><span class="award-icon">&#9962;</span><div class="award-title">Saveur Magazine</div><p class="award-desc">"A visit every cheese lover must make"</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7 — CTA -->
+<section class="cta-section" id="gallery-cta">
+  <div class="container">
+    <h2 class="cta-title" data-animate="fade-up">Experience More<br/><em>Than Images</em></h2>
+    <p class="cta-sub" data-animate="fade-up" data-delay="100">Arrange a private cellar visit and walk the cave yourself — or begin with one of our tasting boxes, a guided sensory journey through the images you've seen here.</p>
+    <div class="cta-actions" data-animate="fade-up" data-delay="250">
+      <a href="tasting-boxes.html" class="btn btn-cream">Shop Tasting Boxes</a>
+      <a href="contact.html" class="btn btn-ghost">Book a Cave Visit</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="footer-main container">
+    <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-icon">&#9670;</span><div class="logo-text"><span class="logo-main">The Affineur Cellar</span><span class="logo-sub">Artisan Cheese Aging</span></div></a><p class="footer-desc">Handcrafted aged cheeses from our stone cellar in Burgundy, France. Every wheel is a collaboration between the affineur, the milk, and time.</p>      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.917 3.917 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+        <a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+                <a href="#" class="social-link" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg></a>
+      </div></div>
+    <div><h3 class="footer-heading">Navigate</h3><ul class="footer-nav-list"><li><a href="index.html" class="footer-link">Home</a></li><li><a href="about.html" class="footer-link">About</a></li><li><a href="aging-process.html" class="footer-link">Aging Process</a></li><li><a href="origins.html" class="footer-link">Origins</a></li><li><a href="tasting-boxes.html" class="footer-link">Tasting Boxes</a></li><li><a href="gallery.html" class="footer-link">Gallery</a></li></ul></div>
+    <div><h3 class="footer-heading">The Cellar</h3><ul class="footer-nav-list"><li><a href="contact.html" class="footer-link">Contact &amp; Visits</a></li><li><a href="contact.html" class="footer-link">Wholesale</a></li><li><a href="contact.html" class="footer-link">Gift Orders</a></li></ul></div>
+    <div><h3 class="footer-heading">Cellar Notes</h3><p class="footer-nl-desc">Seasonal releases and cellar stories.</p><form class="nl-form" novalidate><div class="nl-form-row"><input type="email" class="nl-input" placeholder="Your email" aria-label="Newsletter" required/><button type="submit" class="nl-btn" aria-label="Subscribe">&#8594;</button></div><span class="nl-msg"></span></form></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-bottom-inner container"><p class="footer-copy">&copy; <span id="footer-year"></span> The Affineur Cellar. All rights reserved.</p><nav class="footer-legal" aria-label="Legal"><a href="#" class="footer-legal-link">Privacy</a><a href="#" class="footer-legal-link">Terms</a><a href="#" class="footer-legal-link">Shipping</a></nav></div></div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+<script src="script.js"></script>
+</body>
+</html>

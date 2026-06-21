@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="The Affineur Cellar Tasting Boxes — Hand-assembled curated cheese selections from our cave. Five boxes, each a journey through aged cheese with artisan accompaniments."/>
+  <title>Tasting Boxes — The Affineur Cellar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <script>!function(){var t=localStorage.getItem('acTheme')||'light',d=localStorage.getItem('acDir')||'ltr';document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('dir',d)}()</script>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner container">
+    <a href="index.html" class="logo" id="logo"><span class="logo-icon">&#9670;</span><div class="logo-text"><span class="logo-main">The Affineur Cellar</span><span class="logo-sub">Artisan Cheese Aging</span></div></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item" data-has-dropdown><a href="index.html" class="nav-link" data-dropdown aria-haspopup="true" aria-expanded="false">Home <span class="nav-caret">&#9660;</span></a><div class="dropdown-menu"><a href="index.html" class="dropdown-link">Home 1</a><a href="home2.html" class="dropdown-link">Home 2</a></div></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="aging-process.html" class="nav-link">Aging Process</a></li>
+        <li class="nav-item"><a href="origins.html" class="nav-link">Origins</a></li>
+        <li class="nav-item"><a href="tasting-boxes.html" class="nav-link active">Tasting Boxes</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link nav-login-btn">Login</a></li>
+      </ul>
+      <div class="theme-dir-toggles" id="theme-dir-toggles">
+        <button class="toggle-btn" data-theme-toggle aria-label="Switch theme" title="Dark Mode"></button>
+        <button class="toggle-btn" data-dir-toggle aria-label="Switch direction" title="Switch to RTL"></button>
+      </div>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+  </div>
+</header>
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<main>
+
+<!-- SECTION 1 — BANNER -->
+<section class="page-banner banner-medium" id="boxes-banner">
+  <div class="banner-bg" style="background-image:url('images/boxes_luxury.png')"></div>
+  <div class="banner-overlay"></div>
+  <div class="banner-content container">
+    <div class="banner-badge">Curated Collections</div>
+    <h1 class="banner-title">The Cellar<br/><em>Tasting Boxes</em></h1>
+    <p class="banner-subtitle">Each box is assembled by hand — a curated journey through our cave, with accompaniments chosen to honour the cheese, not compete with it.</p>
+    <div class="banner-actions">
+      <a href="#all-boxes" class="btn btn-primary">Browse All Boxes <span class="btn-arrow">&#8594;</span></a>
+      <a href="contact.html" class="btn btn-ghost">Custom Order</a>
+    </div>
+  </div>
+  <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Tasting Boxes</span></div>
+</section>
+
+<!-- SECTION 2 — ALL BOXES GRID -->
+<section class="section" id="all-boxes">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">All Selections</span>
+      <h2 class="section-title">Five Paths Through<br/><em>Our Cave</em></h2>
+      <p class="section-intro">From a gentle introduction to our full grand selection — each box is its own journey, with detailed tasting notes, cellar provenance, and thoughtfully chosen accompaniments.</p>
+    </div>
+    <div class="product-grid">
+      <article class="product-card" id="box-initiation" data-animate="fade-up" data-delay="100">
+        <div class="product-img-wrap">
+          <img src="images/tasting_box.png" alt="The Affineur's Initiation — 3 Cheese Discovery Box" class="product-img" loading="lazy"/>
+          <span class="product-badge">Bestseller</span>
+        </div>
+        <div class="product-body">
+          <div class="product-meta"><span class="product-cat">3-Cheese Discovery</span><span class="product-wt">~600g</span></div>
+          <h3 class="product-name">The Affineur's Initiation</h3>
+          <p class="product-desc">A gentle introduction to our cellar — one bloomy, one washed-rind, and one Alpine wheel, each aged 60–90 days. Paired with fig conserve, sourdough crackers, and toasted walnuts. Includes a printed cellar guide and tasting cards.</p>
+          <div class="product-meta-row">
+            <div class="product-detail"><span class="d-icon">&#9201;</span>Aged 60–90 days</div>
+            <div class="product-detail"><span class="d-icon">&#127803;</span>Cow &amp; Goat Milk</div>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">&euro; 64</span>
+            <a href="contact.html" class="btn btn-sm btn-primary" id="order-initiation">Order Now</a>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" id="box-mountain" data-animate="fade-up" data-delay="200">
+        <div class="product-img-wrap">
+          <img src="images/cheese_slices.png" alt="The Mountain Heritage — 4 Cheese Alpine Journey" class="product-img" loading="lazy"/>
+          <span class="product-badge new">New Season</span>
+        </div>
+        <div class="product-body">
+          <div class="product-meta"><span class="product-cat">4-Cheese Alpine Journey</span><span class="product-wt">~900g</span></div>
+          <h3 class="product-name">The Mountain Heritage</h3>
+          <p class="product-desc">A dedication to altitude and terroir — four wheels sourced from farms above 1,200m. Aged 4–12 months, with honeycomb, dried apricots, and our house-made walnut-herb paste. Accompanied by an origin map of our alpine farm partners.</p>
+          <div class="product-meta-row">
+            <div class="product-detail"><span class="d-icon">&#9201;</span>Aged 4–12 months</div>
+            <div class="product-detail"><span class="d-icon">&#127803;</span>Raw Alpine Cow</div>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">&euro; 98</span>
+            <a href="contact.html" class="btn btn-sm btn-primary" id="order-mountain">Order Now</a>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" id="box-connoisseur" data-animate="fade-up" data-delay="300">
+        <div class="product-img-wrap">
+          <img src="images/boxes_luxury.png" alt="The Cave Connoisseur — Premium Grand Selection" class="product-img" loading="lazy"/>
+          <span class="product-badge premium">Premium</span>
+        </div>
+        <div class="product-body">
+          <div class="product-meta"><span class="product-cat">5-Cheese Grand Selection</span><span class="product-wt">~1.2kg</span></div>
+          <h3 class="product-name">The Cave Connoisseur</h3>
+          <p class="product-desc">Our most ambitious box — five wheels representing every milk type in our cave: cow, goat, ewe, and buffalo. Aged between 3 months and 2 years, with truffle honey, quince paste, hazelnut crackers, a wax-sealed card, and full cellar notes.</p>
+          <div class="product-meta-row">
+            <div class="product-detail"><span class="d-icon">&#9201;</span>Aged 3 months – 2 yrs</div>
+            <div class="product-detail"><span class="d-icon">&#127803;</span>All Milk Types</div>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">&euro; 148</span>
+            <a href="contact.html" class="btn btn-sm btn-primary" id="order-connoisseur">Order Now</a>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" id="box-harvest" data-animate="fade-up" data-delay="100">
+        <div class="product-img-wrap">
+          <img src="images/cheese_collection.png" alt="The Harvest Wheel — Seasonal Limited Selection" class="product-img" loading="lazy"/>
+          <span class="product-badge seasonal">Seasonal</span>
+        </div>
+        <div class="product-body">
+          <div class="product-meta"><span class="product-cat">Seasonal Limited</span><span class="product-wt">~750g</span></div>
+          <h3 class="product-name">The Harvest Wheel</h3>
+          <p class="product-desc">A rotating seasonal selection, available in limited quantities each quarter. Currently featuring autumn collection: smoked ewe, cave-aged buffalo, and a washed-rind rubbed with local Pinot Noir marc. Includes a seasonal tasting guide.</p>
+          <div class="product-meta-row">
+            <div class="product-detail"><span class="d-icon">&#9201;</span>Aged 90 days+</div>
+            <div class="product-detail"><span class="d-icon">&#127807;</span>Ewe &amp; Buffalo</div>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">&euro; 82</span>
+            <a href="contact.html" class="btn btn-sm btn-primary" id="order-harvest">Order Now</a>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" id="box-cellar-evening" data-animate="fade-up" data-delay="200">
+        <div class="product-img-wrap">
+          <img src="images/wine_pairing.png" alt="The Cellar Evening — Pairing Experience for Two" class="product-img" loading="lazy"/>
+        </div>
+        <div class="product-body">
+          <div class="product-meta"><span class="product-cat">Pairing Experience</span><span class="product-wt">~500g</span></div>
+          <h3 class="product-name">The Cellar Evening</h3>
+          <p class="product-desc">Designed for two — an intimate pairing of four curated cheeses with wine accompaniment notes, candle wax-sealed cards, and our illustrated guide to tasting your way through a cellar selection. A complete evening experience.</p>
+          <div class="product-meta-row">
+            <div class="product-detail"><span class="d-icon">&#9201;</span>Aged 45–120 days</div>
+            <div class="product-detail"><span class="d-icon">&#127803;</span>Cow &amp; Goat</div>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">&euro; 76</span>
+            <a href="contact.html" class="btn btn-sm btn-primary" id="order-evening">Order Now</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 — HOW WE SHIP -->
+<section class="section section-cream" id="shipping">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">Delivery</span>
+      <h2 class="section-title">How We Pack<br/><em>&amp; Ship</em></h2>
+      <p class="section-intro">Aged cheese is a living product. Our packaging is designed to preserve and protect it through every stage of its journey to your table.</p>
+    </div>
+    <div class="ship-grid">
+      <div class="ship-card" data-animate="fade-up" data-delay="100">
+        <div class="ship-icon">&#10052;</div>
+        <h3 class="ship-title">Temperature Controlled</h3>
+        <p class="ship-body">All boxes ship in insulated wool packaging with a gel ice insert. Maintains 6–10°C for up to 36 hours from dispatch.</p>
+      </div>
+      <div class="ship-card" data-animate="fade-up" data-delay="200">
+        <div class="ship-icon">&#128230;</div>
+        <h3 class="ship-title">Wednesday–Friday Dispatch</h3>
+        <p class="ship-body">We only dispatch Monday to Wednesday to avoid weekend delays. Orders placed Thursday–Sunday ship the following Monday.</p>
+      </div>
+      <div class="ship-card" data-animate="fade-up" data-delay="300">
+        <div class="ship-icon">&#127757;</div>
+        <h3 class="ship-title">France &amp; EU Delivery</h3>
+        <p class="ship-body">Currently shipping to France, Belgium, Netherlands, Germany, Switzerland, and the UK. International orders by inquiry.</p>
+      </div>
+      <div class="ship-card" data-animate="fade-up" data-delay="400">
+        <div class="ship-icon">&#9745;</div>
+        <h3 class="ship-title">Arrival Guarantee</h3>
+        <p class="ship-body">If your box arrives in unsatisfactory condition, we will replace it without question. Your first tasting should be perfect.</p>
+      </div>
+    </div>
+    <div class="img-wide aspect-16-6 mt-lg" data-animate="zoom-in">
+      <img src="images/boxes_luxury.png" alt="Premium cheese gift boxes with linen ribbon and wax seal" loading="lazy"/>
+      <p class="img-caption">Each box is hand-assembled on dispatch day, wrapped in kraft paper, and sealed with a wax stamp</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 — PAIRING GUIDE -->
+<section class="section section-dark" id="pairing-guide">
+  <div class="container">
+    <div class="two-col-grid">
+      <div class="content-block" data-animate="fade-right">
+        <span class="section-tag light">Pairing Guide</span>
+        <h2 class="section-title light">What to Serve<br/><em>with Our Cheeses</em></h2>
+        <p class="body-text light-text">Every tasting box includes a printed cellar pairing guide — but here are our general principles for building a memorable board.</p>
+        <div class="numbered-list" style="border-color:rgba(253,248,240,.1)">
+          <div class="numbered-item" style="border-color:rgba(253,248,240,.08)"><span class="n-num" style="color:rgba(220,196,138,.35)">I</span><div><h4 class="n-title" style="color:var(--cream-200)">Wine</h4><p class="n-body light-text">Burgundy whites (Chardonnay) for alpine. Beaujolais for washed rinds. Late-harvest dessert wines for blue-veined wheels.</p></div></div>
+          <div class="numbered-item" style="border-color:rgba(253,248,240,.08)"><span class="n-num" style="color:rgba(220,196,138,.35)">II</span><div><h4 class="n-title" style="color:var(--cream-200)">Bread</h4><p class="n-body light-text">Simple, lightly salted sourdough. Avoid flavoured crackers that compete with complex rinds. Walnut bread suits our alpine selection beautifully.</p></div></div>
+          <div class="numbered-item" style="border-color:rgba(253,248,240,.08)"><span class="n-num" style="color:rgba(220,196,138,.35)">III</span><div><h4 class="n-title" style="color:var(--cream-200)">Accompaniments</h4><p class="n-body light-text">Honeycomb, quince paste, fresh figs, and roasted nuts are all included in our boxes and selected to complement, never overpower.</p></div></div>
+        </div>
+      </div>
+      <div class="img-frame aspect-4-5" data-animate="fade-left">
+        <img src="images/grazing_board.png" alt="Elegant cheese and wine pairing spread on dark slate" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 — CUSTOM ORDERS -->
+<section class="section" id="custom-orders">
+  <div class="container">
+    <div class="two-col-grid">
+      <div class="img-frame aspect-3-2" data-animate="fade-right">
+        <img src="images/cheese_cutting.png" alt="Custom selection of aged cheese varieties" loading="lazy"/>
+      </div>
+      <div class="content-block" data-animate="fade-left">
+        <span class="section-tag">Custom Orders</span>
+        <h2 class="section-title">A Box Built<br/><em>for You</em></h2>
+        <p class="body-text">None of our standard boxes suit your needs? We build custom selections for corporate gifts, weddings, events, restaurant wholesale, and personal commissions.</p>
+        <p class="body-text">Tell us who it is for, your budget, any dietary requirements, and whether you want a complete tasting experience or single-variety bulk quantities — and we will respond within two working days with a personalised proposal.</p>
+        <div class="cards-2" style="gap:var(--space-sm);margin-top:var(--space-md)">
+          <div class="feat-card" style="padding:var(--space-sm)"><div class="feat-icon" style="font-size:1.3rem">&#127873;</div><h3 class="feat-title" style="font-size:.95rem">Corporate Gifts</h3><p class="feat-body" style="font-size:.85rem">Branded boxes with custom cards available from 10 units. Custom wax seals and printed inserts.</p></div>
+          <div class="feat-card custom-wholesale-card" style="padding:var(--space-sm)"><div class="feat-icon" style="font-size:1.3rem">&#127895;</div><h3 class="feat-title" style="font-size:.95rem">Restaurant Wholesale</h3><p class="feat-body" style="font-size:.85rem">Weekly supply of cave-aged wheels for cheese boards. Volume pricing with full provenance documentation.</p></div>
+        </div>
+        <a href="contact.html" class="btn btn-outline mt-md">Request a Custom Box <span class="btn-arrow">&#8594;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6 — CUSTOMER REVIEWS -->
+<section class="section section-cream" id="reviews">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">Reviews</span>
+      <h2 class="section-title">What Our Customers<br/><em>Say</em></h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card" data-animate="fade-up" data-delay="100">
+        <div class="testimonial-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+        <p class="testimonial-quote">"The Cave Connoisseur box is simply extraordinary. The 18-month alpine wheel alone was worth every cent — crystalline, nutty, and deeply complex. Nothing I've bought from a supermarket has come close."</p>
+        <div class="testimonial-person">
+          <div class="testimonial-avatar-wrap">
+            <img src="images/person_sophie.png" alt="Sophie L." class="testimonial-avatar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <span class="avatar-initials" style="display:none">SL</span>
+          </div>
+          <div class="testimonial-info">
+            <div class="testimonial-author">Sophie L.</div>
+            <div class="testimonial-loc">Paris, France</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-animate="fade-up" data-delay="250">
+        <div class="testimonial-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+        <p class="testimonial-quote testimonial-quote-thomas">"We used The Affineur Cellar for our wedding cheese board — a fully custom selection of seven wheels. The service was impeccable, the provenance documentation was beautiful, and the cheese was extraordinary."</p>
+        <div class="testimonial-person">
+          <div class="testimonial-avatar-wrap">
+            <img src="images/person_couple.png" alt="Thomas &amp; Elise M." class="testimonial-avatar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <span class="avatar-initials" style="display:none">TM</span>
+          </div>
+          <div class="testimonial-info">
+            <div class="testimonial-author">Thomas &amp; Elise M.</div>
+            <div class="testimonial-loc">Lyon, France</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-animate="fade-up" data-delay="400">
+        <div class="testimonial-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+        <p class="testimonial-quote">"I've subscribed to the Affineur's Initiation box quarterly for three years. It's become a ritual — opening it with a glass of wine on Friday evening. The tasting notes card is read like a letter from a friend."</p>
+        <div class="testimonial-person">
+          <div class="testimonial-avatar-wrap">
+            <img src="images/person_clive.png" alt="Clive H." class="testimonial-avatar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <span class="avatar-initials" style="display:none">CH</span>
+          </div>
+          <div class="testimonial-info">
+            <div class="testimonial-author">Clive H.</div>
+            <div class="testimonial-loc">London, UK</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7 — FAQ -->
+<section class="section section-dark" id="boxes-faq">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag light">FAQ</span>
+      <h2 class="section-title light">Questions About<br/><em>Our Boxes</em></h2>
+    </div>
+    <div class="faq-list" style="max-width:760px;margin:0 auto" data-animate="fade-up">
+      <div class="faq-item">
+        <button class="faq-question light">How long do the cheeses stay fresh after delivery? <span class="faq-caret">&#9660;</span></button>
+        <div class="faq-answer light">Once received, hard and semi-hard wheels will keep for 3–6 weeks under refrigeration, wrapped in the provided wax paper. Bloomy rind cheeses should be consumed within 5–7 days of arrival. All cheeses are best removed from the fridge 30 minutes before serving.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question light">Can I request specific milk types or avoid certain styles? <span class="faq-caret">&#9660;</span></button>
+        <div class="faq-answer light">Yes — please use the contact form to specify your preferences when ordering. We can accommodate most dietary requirements and style preferences, including cow-milk-only, no blue-veined, goat-milk-free, or specific weight limits. Custom selection is our strength.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question light">Do you ship internationally outside the EU? <span class="faq-caret">&#9660;</span></button>
+        <div class="faq-answer light">Currently, our standard shipping covers France, Belgium, Netherlands, Germany, Switzerland, and the UK. We ship to other destinations on a case-by-case basis — customs regulations and transit times are the primary limitation for raw milk products. Please contact us to discuss.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question light">Are any of your cheeses suitable for pregnant women? <span class="faq-caret">&#9660;</span></button>
+        <div class="faq-answer light">All cheeses in our cellar are made from raw milk. UK and EU food safety guidelines advise against the consumption of raw milk cheeses during pregnancy. We are unable to recommend our products to pregnant customers under current guidelines, and we would ask that you consult your healthcare provider.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8 — CTA -->
+<section class="cta-section" id="boxes-cta">
+  <div class="container">
+    <h2 class="cta-title" data-animate="fade-up">Ready to Open<br/><em>the Cellar Door?</em></h2>
+    <p class="cta-sub" data-animate="fade-up" data-delay="100">Choose a box, or contact us to build a custom selection. All tasting boxes ship in temperature-controlled packaging, Wednesday to Friday.</p>
+    <div class="cta-actions" data-animate="fade-up" data-delay="250">
+      <a href="#all-boxes" class="btn btn-cream">Browse All Boxes</a>
+      <a href="contact.html" class="btn btn-ghost">Custom Order</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="footer-main container">
+    <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-icon">&#9670;</span><div class="logo-text"><span class="logo-main">The Affineur Cellar</span><span class="logo-sub">Artisan Cheese Aging</span></div></a><p class="footer-desc">Handcrafted aged cheeses from our stone cellar in Burgundy, France. Every wheel is a collaboration between the affineur, the milk, and time.</p>      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.917 3.917 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+        <a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+                <a href="#" class="social-link" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg></a>
+      </div></div>
+    <div><h3 class="footer-heading">Navigate</h3><ul class="footer-nav-list"><li><a href="index.html" class="footer-link">Home</a></li><li><a href="about.html" class="footer-link">About</a></li><li><a href="aging-process.html" class="footer-link">Aging Process</a></li><li><a href="origins.html" class="footer-link">Origins</a></li><li><a href="tasting-boxes.html" class="footer-link">Tasting Boxes</a></li><li><a href="gallery.html" class="footer-link">Gallery</a></li></ul></div>
+    <div><h3 class="footer-heading">The Cellar</h3><ul class="footer-nav-list"><li><a href="contact.html" class="footer-link">Contact &amp; Visits</a></li><li><a href="contact.html" class="footer-link">Wholesale</a></li><li><a href="contact.html" class="footer-link">Gift Orders</a></li></ul></div>
+    <div><h3 class="footer-heading">Cellar Notes</h3><p class="footer-nl-desc">Seasonal releases and cellar stories.</p><form class="nl-form" novalidate><div class="nl-form-row"><input type="email" class="nl-input" placeholder="Your email" aria-label="Newsletter" required/><button type="submit" class="nl-btn" aria-label="Subscribe">&#8594;</button></div><span class="nl-msg"></span></form></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-bottom-inner container"><p class="footer-copy">&copy; <span id="footer-year"></span> The Affineur Cellar. All rights reserved.</p><nav class="footer-legal" aria-label="Legal"><a href="#" class="footer-legal-link">Privacy</a><a href="#" class="footer-legal-link">Terms</a><a href="#" class="footer-legal-link">Shipping</a></nav></div></div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+<script src="script.js"></script>
+</body>
+</html>

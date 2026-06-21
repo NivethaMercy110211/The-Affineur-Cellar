@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Contact The Affineur Cellar — Arrange a cellar visit, order a tasting box, inquire about wholesale, or ask Emile Vaucher anything about aged cheese. Beaune, Burgundy, France."/>
+  <title>Contact — The Affineur Cellar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <script>!function(){var t=localStorage.getItem('acTheme')||'light',d=localStorage.getItem('acDir')||'ltr';document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('dir',d)}()</script>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner container">
+    <a href="index.html" class="logo" id="logo"><span class="logo-icon">&#9670;</span><div class="logo-text"><span class="logo-main">The Affineur Cellar</span><span class="logo-sub">Artisan Cheese Aging</span></div></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item" data-has-dropdown><a href="index.html" class="nav-link" data-dropdown aria-haspopup="true" aria-expanded="false">Home <span class="nav-caret">&#9660;</span></a><div class="dropdown-menu"><a href="index.html" class="dropdown-link">Home 1</a><a href="home2.html" class="dropdown-link">Home 2</a></div></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="aging-process.html" class="nav-link">Aging Process</a></li>
+        <li class="nav-item"><a href="origins.html" class="nav-link">Origins</a></li>
+        <li class="nav-item"><a href="tasting-boxes.html" class="nav-link">Tasting Boxes</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link nav-login-btn">Login</a></li>
+      </ul>
+      <div class="theme-dir-toggles" id="theme-dir-toggles">
+        <button class="toggle-btn" data-theme-toggle aria-label="Switch theme" title="Dark Mode"></button>
+        <button class="toggle-btn" data-dir-toggle aria-label="Switch direction" title="Switch to RTL"></button>
+      </div>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+  </div>
+</header>
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<main>
+
+<!-- SECTION 1 — BANNER -->
+<section class="page-banner banner-medium" id="contact-banner">
+  <div class="banner-bg" style="background-image:url('images/contact_door.png')"></div>
+  <div class="banner-overlay"></div>
+  <div class="banner-content container">
+    <div class="banner-badge">Get in Touch</div>
+    <h1 class="banner-title">Inquire About<br/><em>Our Cellar</em></h1>
+    <p class="banner-subtitle">Whether you wish to order a tasting box, arrange a cave visit, discuss wholesale, or simply want to talk about cheese — we would love to hear from you.</p>
+    <div class="banner-actions">
+      <a href="#contact-form-section" class="btn btn-primary">Send an Inquiry <span class="btn-arrow">&#8594;</span></a>
+      <a href="#visit-info" class="btn btn-ghost">Plan a Visit</a>
+    </div>
+  </div>
+  <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Contact</span></div>
+</section>
+
+<!-- SECTION 2 — CONTACT FORM + INFO -->
+<section class="section section-dark" id="contact-form-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info-block" data-animate="fade-right">
+        <span class="section-tag light">Reach Us</span>
+        <h2 class="section-title light">The Cellar<br/><em>Door is Open</em></h2>
+        <p class="body-text light-text">We respond to all inquiries within two working days. For urgent matters relating to existing orders, please use the subject line "Order Inquiry" in your email.</p>
+        <div class="contact-detail" id="contact-location">
+          <span class="c-icon">&#128205;</span>
+          <div><span class="c-label">Cellar Address</span><span class="c-val">14 Rue des Caves, Beaune<br/>Burgundy, France 21200</span></div>
+        </div>
+        <div class="contact-detail" id="contact-hours">
+          <span class="c-icon">&#128336;</span>
+          <div><span class="c-label">Cellar Hours</span><span class="c-val">Wed – Sat: 10:00 – 17:00<br/>By appointment only</span></div>
+        </div>
+        <div class="contact-detail" id="contact-email-detail">
+          <span class="c-icon">&#9993;</span>
+          <div><span class="c-label">Email</span><span class="c-val">bonjour@affineurecellar.com</span></div>
+        </div>
+        <div class="contact-detail">
+          <span class="c-icon">&#128222;</span>
+          <div><span class="c-label">Telephone</span><span class="c-val">+33 (0)3 80 XX XX XX<br/>Wed–Sat, 10:00–17:00</span></div>
+        </div>
+      </div>
+      <div class="contact-form-wrap" data-animate="fade-left">
+        <div class="form-wrap">
+          <form class="form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name</label>
+              <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Jean Dupont" required autocomplete="name"/>
+              <span class="form-error" id="form-name-err" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email Address</label>
+              <input type="email" id="form-email" name="email" class="form-input" placeholder="you@example.com" required autocomplete="email"/>
+              <span class="form-error" id="form-email-err" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-inquiry" class="form-label">Type of Inquiry</label>
+                <select id="form-inquiry" name="inquiry" class="form-select" required>
+                  <option value="" disabled selected>Select an option…</option>
+                  <option value="tasting-box">Order a Tasting Box</option>
+                  <option value="custom">Custom Commission</option>
+                  <option value="cellar-visit">Cellar Visit</option>
+                  <option value="wholesale">Wholesale Inquiry</option>
+                  <option value="gift">Gift Order</option>
+                  <option value="apprenticeship">Apprenticeship</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-error" id="form-inquiry-err" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="form-budget" class="form-label">Approximate Budget</label>
+                <select id="form-budget" name="budget" class="form-select">
+                  <option value="" disabled selected>Select range…</option>
+                  <option value="under-100">Under &euro;100</option>
+                  <option value="100-250">&euro;100 – &euro;250</option>
+                  <option value="250-500">&euro;250 – &euro;500</option>
+                  <option value="500-plus">&euro;500+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-message" class="form-label">Your Message</label>
+              <textarea id="form-message" name="message" class="form-textarea" rows="5" placeholder="Tell us about your inquiry — what you're looking for, dietary needs, or questions about our cellar…" required></textarea>
+              <span class="form-error" id="form-message-err" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-cb-label" for="form-newsletter">
+                <input type="checkbox" id="form-newsletter" name="newsletter" class="form-cb"/>
+                <span class="form-cb-box" aria-hidden="true"></span>
+                Subscribe to Cellar Notes — seasonal releases and tasting events.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+              Send Your Inquiry <span class="btn-arrow">&#8594;</span>
+            </button>
+            <div class="form-success" id="form-success" role="status" aria-live="polite" hidden style="display:none">
+              <span class="success-icon">&#10003;</span>
+              <span>Thank you — your inquiry has been received. Emile will respond within 2 working days.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 — VISIT INFORMATION -->
+<section class="section" id="visit-info">
+  <div class="container">
+    <div class="two-col-grid">
+      <div class="content-block" data-animate="fade-right">
+        <span class="section-tag">Cellar Visits</span>
+        <h2 class="section-title">Come to Beaune —<br/><em>Walk the Cave</em></h2>
+        <p class="body-text">We welcome private guided visits to our cellar by appointment, Wednesday through Saturday. A visit to The Affineur Cellar includes a guided walk through all three cave zones, a tasting of four to six wheels at different stages of maturation, and a direct consultation with our affineur.</p>
+        <p class="body-text">Visits are limited to a maximum of six people to preserve the intimacy of the experience and the quiet of the cave. We ask that visitors arrive wearing closed-toe shoes and without strong perfume, which can interfere with the delicate aromas of the ageing wheels.</p>
+        <div class="numbered-list">
+          <div class="numbered-item"><span class="n-num" style="color:var(--cream-500)">I</span><div><h4 class="n-title">Private Tour (up to 6)</h4><p class="n-body">1.5 hour guided walk through all cave zones, concluding with a tasting of key wheels. &euro;45 per person. By appointment.</p></div></div>
+          <div class="numbered-item"><span class="n-num" style="color:var(--cream-500)">II</span><div><h4 class="n-title">Affineur's Masterclass</h4><p class="n-body">Half-day intensive with Emile: guided cave walk, tasting workshop, and curated pairings. &euro;120 per person. Max 4.</p></div></div>
+          <div class="numbered-item"><span class="n-num" style="color:var(--cream-500)">III</span><div><h4 class="n-title">Trade &amp; Press Visits</h4><p class="n-body">Complimentary tour for trade buyers, journalists, and food writers. Please bring credentials and book in advance.</p></div></div>
+        </div>
+      </div>
+      <div class="img-frame aspect-4-5" data-animate="fade-left">
+        <img src="images/contact_cellar_visit.png" alt="Cheese wheels aging on wooden shelves in the historic cellar" loading="lazy"/>
+        <div class="float-badge"><span class="badge-num">Wed</span><span class="badge-lbl">to Sat</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 — WHOLESALE & TRADE -->
+<section class="section section-cream" id="wholesale">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">Trade &amp; Wholesale</span>
+      <h2 class="section-title">Stocking Our<br/><em>Cellar Wheels</em></h2>
+      <p class="section-intro">We supply a small number of restaurants, wine merchants, and specialist cheese shops across France and the UK. We are selective — our cheeses belong in places that understand and can communicate their story.</p>
+    </div>
+    <div class="cards-3">
+      <div class="feat-card" data-animate="fade-up" data-delay="100">
+        <div class="feat-icon">&#127869;</div>
+        <h3 class="feat-title">Restaurant Supply</h3>
+        <p class="feat-body">Weekly delivery of cave-aged wheels for cheese boards, with full provenance details and tasting notes for your staff. Minimum order requirements apply.</p>
+      </div>
+      <div class="feat-card" data-animate="fade-up" data-delay="250">
+        <div class="feat-icon">&#127984;</div>
+        <h3 class="feat-title">Retail Partnership</h3>
+        <p class="feat-body">We partner with cheese shops and delis eager to educate customers about our affinage and provenance. We visit partner shops quarterly to host our tastings.</p>
+      </div>
+      <div class="feat-card" data-animate="fade-up" data-delay="400">
+        <div class="feat-icon">&#127870;</div>
+        <h3 class="feat-title">Corporate Gifting</h3>
+        <p class="feat-body">Custom tasting boxes for corporate clients with personalised wax-sealed cards, origin documents, and volume pricing from 10 units. Lead time is two weeks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 — CELLAR NOTES NEWSLETTER -->
+<section class="section section-dark" id="cellar-notes">
+  <div class="container">
+    <div class="two-col-grid" style="align-items:center">
+      <div data-animate="fade-right">
+        <span class="section-tag light">The Newsletter</span>
+        <h2 class="section-title light">Cellar Notes —<br/><em>Dispatches from the Cave</em></h2>
+        <p class="body-text light-text">Four times a year — at the change of each season — we write a letter from the cave. It contains the current seasonal release, an affineur's reflection on what is happening in the cellar, and occasional recipes and pairing ideas.</p>
+        <p class="body-text light-text">We have been sending Cellar Notes since 2009. No marketing language. No discounts. Just cheese, cave, and conversation.</p>
+        <form class="nl-form" id="contact-nl-form" novalidate style="max-width:400px;margin-top:var(--space-lg)">
+          <div class="nl-form-row">
+            <input type="email" class="nl-input" placeholder="Your email address" aria-label="Newsletter email" required/>
+            <button type="submit" class="nl-btn">Subscribe</button>
+          </div>
+          <span class="nl-msg" id="contact-nl-msg"></span>
+        </form>
+      </div>
+      <div class="img-frame aspect-3-2" data-animate="fade-left">
+        <img src="images/tasting_notes.png" alt="Handwritten tasting notes and cellar journal" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6 — CONTACT FAQ -->
+<section class="section" id="contact-faq">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title">Before You<br/><em>Write to Us</em></h2>
+    </div>
+    <div class="faq-list" style="max-width:760px;margin:0 auto" data-animate="fade-up">
+      <div class="faq-item">
+        <button class="faq-question">How quickly do you respond to inquiries? <span class="faq-caret">&#9660;</span></button>
+        <div class="faq-answer">We aim to respond to all inquiries within two working days. During peak seasons (November–December, April–May), response times may extend to three to four days. We read every message personally.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is it possible to purchase individual wheels? <span class="faq-caret">&#9660;</span></button>
+        <div class="faq-answer">Yes — while our tasting boxes are our primary retail offering, individual whole or half wheels can be ordered directly by contacting us. Prices vary by variety and current maturation. Minimum order of 400g per variety applies for cut cheese.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you accept visitors without a prior appointment? <span class="faq-caret">&#9660;</span></button>
+        <div class="faq-answer">We do not. The cave is an active working environment and visits must be carefully scheduled around the daily care routine of the wheels. Unannounced visitors cannot be admitted, both for logistical and hygiene reasons. Please contact us in advance.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What languages do you communicate in? <span class="faq-caret">&#9660;</span></button>
+        <div class="faq-answer">We communicate in French and English fluently. We can manage correspondence in Italian and have basic German. Our tasting box documentation is available in French and English.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Are children welcome on cellar visits? <span class="faq-caret">&#9660;</span></button>
+        <div class="faq-answer">We welcome children over the age of 8 on cellar visits — the cave environment is safe, but the humidity and low light can be challenging for very young children. We ask that children remain with adults at all times and are supervised near the open shelving of aging wheels.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7 — LOCATION / MAP NOTE -->
+<section class="section section-cream" id="location">
+  <div class="container">
+    <div class="section-header center" data-animate="fade-up">
+      <span class="section-tag">Location</span>
+      <h2 class="section-title">Finding Us in<br/><em>Beaune, Burgundy</em></h2>
+      <p class="section-intro">Our cellar is located in the medieval centre of Beaune, just off the main market square. The town is easily accessible by TGV from Paris (1h 40m) or Lyon (45 minutes).</p>
+    </div>
+    <div class="two-col-grid" style="align-items:start">
+      <div data-animate="fade-right">
+        <div class="feat-card" style="padding:var(--space-lg);gap:var(--space-md);display:flex;flex-direction:column">
+          <h3 class="feat-title">Getting to the Cellar</h3>
+          <div class="contact-detail">
+            <span class="c-icon" style="color:var(--brown-100)">&#128663;</span>
+            <div><span class="c-label" style="color:var(--brown-200)">By Car</span><span class="c-val" style="color:var(--brown-200)">A6 motorway, exit Beaune. Follow signs to Centre Ville. Free parking available at Parking de la Bouteille (5 min walk).</span></div>
+          </div>
+          <div class="contact-detail">
+            <span class="c-icon" style="color:var(--brown-100)">&#128649;</span>
+            <div><span class="c-label" style="color:var(--brown-200)">By Train</span><span class="c-val" style="color:var(--brown-200)">Gare de Beaune, 12-minute walk. Direct TGV from Paris Gare de Lyon (1h 40m) and Lyon Part-Dieu (45 min).</span></div>
+          </div>
+          <div class="contact-detail">
+            <span class="c-icon" style="color:var(--brown-100)">&#128205;</span>
+            <div><span class="c-label" style="color:var(--brown-200)">Address</span><span class="c-val" style="color:var(--brown-200)">14 Rue des Caves<br class="hide-ipad"/> 21200 Beaune, Burgundy, France</span></div>
+          </div>
+        </div>
+        <div class="feat-card" style="margin-top:var(--space-sm);padding:var(--space-md)">
+          <h3 class="feat-title" style="margin-bottom:.5rem">Cellar Opening Hours</h3>
+          <table style="width:100%;border-collapse:collapse;font-family:var(--font-sans);font-size:.78rem;color:var(--brown-200)">
+            <tr><td style="padding:.4rem 0;border-bottom:1px solid var(--cream-300)">Wednesday</td><td style="text-align:right;color:var(--brown-100);font-weight:700">10:00 – 17:00</td></tr>
+            <tr><td style="padding:.4rem 0;border-bottom:1px solid var(--cream-300)">Thursday</td><td style="text-align:right;color:var(--brown-100);font-weight:700">10:00 – 17:00</td></tr>
+            <tr><td style="padding:.4rem 0;border-bottom:1px solid var(--cream-300)">Friday</td><td style="text-align:right;color:var(--brown-100);font-weight:700">10:00 – 17:00</td></tr>
+            <tr><td style="padding:.4rem 0;border-bottom:1px solid var(--cream-300)">Saturday</td><td style="text-align:right;color:var(--brown-100);font-weight:700">10:00 – 15:00</td></tr>
+            <tr><td style="padding:.4rem 0">Mon, Tue, Sun</td><td style="text-align:right;color:rgba(107,79,53,.5)">Closed</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="img-frame aspect-4-5" data-animate="fade-left">
+        <img src="images/contact_beaune_location.png" alt="Historic cobblestone street in Beaune, Burgundy" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="footer-main container">
+    <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-icon">&#9670;</span><div class="logo-text"><span class="logo-main">The Affineur Cellar</span><span class="logo-sub">Artisan Cheese Aging</span></div></a><p class="footer-desc">Handcrafted aged cheeses from our stone cellar in Burgundy, France. Every wheel is a collaboration between the affineur, the milk, and time.</p>      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.917 3.917 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+        <a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+                <a href="#" class="social-link" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg></a>
+      </div></div>
+    <div><h3 class="footer-heading">Navigate</h3><ul class="footer-nav-list"><li><a href="index.html" class="footer-link">Home</a></li><li><a href="about.html" class="footer-link">About</a></li><li><a href="aging-process.html" class="footer-link">Aging Process</a></li><li><a href="origins.html" class="footer-link">Origins</a></li><li><a href="tasting-boxes.html" class="footer-link">Tasting Boxes</a></li><li><a href="gallery.html" class="footer-link">Gallery</a></li></ul></div>
+    <div><h3 class="footer-heading">The Cellar</h3><ul class="footer-nav-list"><li><a href="contact.html" class="footer-link">Contact &amp; Visits</a></li><li><a href="contact.html" class="footer-link">Wholesale</a></li><li><a href="contact.html" class="footer-link">Gift Orders</a></li></ul></div>
+    <div><h3 class="footer-heading">Cellar Notes</h3><p class="footer-nl-desc">Seasonal releases and cellar stories.</p><form class="nl-form" novalidate><div class="nl-form-row"><input type="email" class="nl-input" placeholder="Your email" aria-label="Newsletter" required/><button type="submit" class="nl-btn" aria-label="Subscribe">&#8594;</button></div><span class="nl-msg"></span></form></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-bottom-inner container"><p class="footer-copy">&copy; <span id="footer-year"></span> The Affineur Cellar. All rights reserved.</p><nav class="footer-legal" aria-label="Legal"><a href="#" class="footer-legal-link">Privacy</a><a href="#" class="footer-legal-link">Terms</a><a href="#" class="footer-legal-link">Shipping</a></nav></div></div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+<script src="script.js"></script>
+</body>
+</html>

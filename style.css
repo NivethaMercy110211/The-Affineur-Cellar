@@ -295,7 +295,11 @@ html[dir="rtl"] .nav-link::after{transform-origin:right;}
 
 .banner-content{
   position:relative;z-index:2;
-  padding-top:var(--header-h);padding-bottom:var(--space-2xl);
+  padding-top:calc(var(--header-h) + var(--space-md));padding-bottom:var(--space-2xl);
+}
+.page-banner.banner-medium .banner-content,
+.page-banner.banner-short .banner-content {
+  padding-top: calc(var(--header-h) + var(--space-xl));
 }
 .banner-content.center-content{text-align:center;display:flex;flex-direction:column;align-items:center}
 
@@ -352,14 +356,14 @@ html[dir="rtl"] .nav-link::after{transform-origin:right;}
 .two-col-grid.reverse>*{direction:ltr}
 
 .img-frame{
-  position:relative;border-radius:var(--r-md);overflow:hidden;
+  position:relative;border-radius:var(--r-md);overflow:visible;
 }
 .img-frame::before{
   content:'';position:absolute;inset:-12px;
   border:2px solid var(--cream-400);border-radius:var(--r-md);
   z-index:0;pointer-events:none;
 }
-.img-frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform var(--t-slow);position:relative;z-index:1}
+.img-frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform var(--t-slow);position:relative;z-index:1;border-radius:var(--r-md)}
 @media (hover: hover) {
   .img-frame:hover img{transform:scale(1.04)}
 }
@@ -403,6 +407,31 @@ html[dir="rtl"] .nav-link::after{transform-origin:right;}
 .feat-card.dark:hover{border-color:rgba(253,248,240,.2)}
 
 .feat-icon{font-size:2rem;margin-bottom:var(--space-sm)}
+.site-icon{
+  width:1em;height:1em;
+  display:inline-block;
+  fill:none;stroke:currentColor;stroke-width:1.65;
+  stroke-linecap:round;stroke-linejoin:round;
+  vertical-align:-.12em;
+}
+.feat-icon .site-icon,
+.origin-icon .site-icon,
+.ship-icon .site-icon,
+.timeline-dot .site-icon,
+.c-icon .site-icon,
+.cert-icon .site-icon,
+.auth-success-icon .site-icon{
+  width:1em;height:1em;
+}
+.testimonial-stars{
+  display:flex;
+  justify-content:center;
+  gap:.18rem;
+}
+.testimonial-stars .site-icon{
+  width:.9rem;height:.9rem;
+  fill:currentColor;
+}
 .feat-title{font-family:var(--font-serif);font-size:1.15rem;font-weight:500;color:var(--brown-300);margin-bottom:.5rem}
 .feat-title.light{color:var(--cream-200)}
 .feat-body{font-family:var(--font-display);font-size:.95rem;font-weight:300;color:var(--brown-200);line-height:1.8;flex:1}
@@ -733,7 +762,26 @@ html[dir="rtl"] .nav-link::after{transform-origin:right;}
 /* =================== AWARDS / PRESS =================== */
 .awards-row{display:flex;justify-content:center;flex-wrap:wrap;gap:var(--space-lg)}
 .award-item{text-align:center;padding:var(--space-md)}
-.award-icon{font-size:3rem;margin-bottom:.5rem;display:block}
+.award-icon{
+  width:64px;height:64px;margin:0 auto var(--space-sm);
+  display:grid;place-items:center;
+  color:var(--brown-100);
+  background:var(--cream-100);
+  border:1px solid var(--cream-400);
+  border-radius:50%;
+  transition:color var(--t-fast),background var(--t-fast),border-color var(--t-fast),transform var(--t-fast);
+}
+.award-icon svg{
+  width:30px;height:30px;
+  fill:none;stroke:currentColor;stroke-width:1.5;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+.award-item:hover .award-icon{
+  color:var(--cream-100);
+  background:var(--brown-300);
+  border-color:var(--brown-300);
+  transform:translateY(-3px);
+}
 .award-title{font-family:var(--font-serif);font-size:1rem;font-weight:500;color:var(--brown-300)}
 .award-desc{font-family:var(--font-sans);font-size:.68rem;color:var(--brown-100);margin-top:.25rem}
 
@@ -757,6 +805,19 @@ html[dir="rtl"] .nav-link::after{transform-origin:right;}
 .img-wide.aspect-16-5{aspect-ratio:16/5}
 .img-wide.no-radius{border-radius:0}
 .img-caption{text-align:center;font-family:var(--font-sans);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--brown-100);margin-top:.75rem}
+
+/* Home 2 journey image: keep the caption outside the cropped image area. */
+#how-it-works .journey-image{
+  aspect-ratio:auto;
+  overflow:visible;
+  border-radius:0;
+}
+#how-it-works .journey-image img{
+  width:100%;
+  aspect-ratio:16/6;
+  object-fit:cover;
+  border-radius:var(--r-md);
+}
 
 /* Content images remain at their natural 100% frame size on desktop.
    Product and gallery hover interactions are intentionally unaffected. */
@@ -1063,6 +1124,8 @@ html[dir="rtl"] .nav-link::after{transform-origin:right;}
   /* Banner */
   .banner-stats{flex-wrap:wrap;gap:var(--space-md)}
   .img-wide.aspect-16-6,.img-wide.aspect-16-5{aspect-ratio:16/7}
+  #how-it-works .journey-image{aspect-ratio:auto}
+  #how-it-works .journey-image img{aspect-ratio:16/7}
 }
 
 /* Touch-first tablets can use the desktop navbar at landscape widths.
@@ -1247,10 +1310,14 @@ html[dir="rtl"] .nav-link::after{transform-origin:right;}
   .form-row{grid-template-columns:1fr}
   .two-col-grid{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
-  .float-badge{right:.5rem;bottom:-1rem;width:70px;height:70px}
-  html[dir="rtl"] .float-badge{right:auto;left:.5rem}
+  .img-frame:has(.float-badge) {
+    margin-inline-end: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
   .back-to-top{bottom:1.25rem;inset-inline-end:1.25rem;width:40px;height:40px}
   .img-wide.aspect-16-6,.img-wide.aspect-16-5{aspect-ratio:4/3}
+  #how-it-works .journey-image{aspect-ratio:auto}
+  #how-it-works .journey-image img{aspect-ratio:4/3}
   .nl-form-row{flex-direction:column}
   .cta-actions{flex-direction:column;align-items:center}
 }
@@ -1876,6 +1943,7 @@ html[dir="rtl"] .auth-toggles{right:auto;left:1.25rem}
   max-width:500px;
   max-height:calc(100dvh - 1.3rem);
   padding:.8rem 1.5rem;
+  overflow-y:auto;
 }
 .register-page .auth-logo{
   gap:.15rem;
@@ -1895,12 +1963,30 @@ html[dir="rtl"] .auth-toggles{right:auto;left:1.25rem}
 .register-page .auth-footer{margin-top:.15rem}
 
 @media(max-width:499px){
-  .register-page .auth-page{padding:.4rem}
+  .register-page{
+    height:auto;
+    overflow:auto;
+  }
+  .register-page .auth-page{
+    height:auto;
+    min-height:100dvh;
+    overflow:visible;
+    padding:3.5rem .65rem 1.5rem;
+  }
   .register-page .auth-card{
-    max-height:calc(100dvh - .8rem);
+    max-height:none;
+    overflow:visible;
     padding:.65rem .9rem;
   }
-  .register-page .auth-toggles{top:.5rem;inset-inline-end:.5rem}
+  .register-page .auth-toggles{
+    position:absolute;
+    top:1.25rem;
+    inset-inline-end:1.25rem;
+  }
+  html[dir="rtl"] .register-page .auth-toggles{
+    inset-inline-start:1.25rem;
+    inset-inline-end:auto;
+  }
   .register-page .auth-logo-sub{font-size:.5rem}
   .register-page .auth-label{font-size:.58rem}
   .register-page .auth-input{font-size:.85rem}
@@ -2128,5 +2214,69 @@ html[dir="rtl"] .auth-toggles{right:auto;left:1.25rem}
 @media (min-width: 600px) {
   .hide-ipad {
     display: none;
+  }
+}
+
+/* Dark mode section separation.
+   Keep each section's intended surface and mark every section boundary. */
+[data-theme="dark"] main > section{
+  border-bottom:1px solid rgba(196,168,106,.28);
+  box-shadow:inset 0 -1px 0 rgba(0,0,0,.38);
+}
+[data-theme="dark"] main > .section{
+  background:#1a1209;
+}
+[data-theme="dark"] main > .section.section-cream{
+  background:#291b0c;
+}
+[data-theme="dark"] main > .section.section-light{
+  background:#211608;
+}
+[data-theme="dark"] main > .section.section-brown{
+  background:#171006;
+}
+[data-theme="dark"] main > .section.section-dark,
+[data-theme="dark"] main > .cta-section.section-dark{
+  background:#0e0905;
+}
+[data-theme="dark"] main > .cta-section{
+  border-top:1px solid rgba(196,168,106,.22);
+}
+
+/* Auth mobile controls: reserve a dedicated top row so theme/direction
+   buttons never overlap login, registration, or password-reset cards. */
+@media(max-width:599px){
+  body:has(.auth-page){
+    min-height:100dvh;
+  }
+  body:has(.auth-page) .auth-toggles{
+    position:absolute;
+    top:.75rem;
+    inset-inline-end:.75rem;
+    inset-inline-start:auto;
+    z-index:10;
+    padding:.25rem;
+    border-radius:var(--r-md);
+    background:rgba(30,16,8,.72);
+    backdrop-filter:blur(10px);
+  }
+  html[dir="rtl"] body:has(.auth-page) .auth-toggles{
+    inset-inline-start:.75rem;
+    inset-inline-end:auto;
+  }
+  body:has(.auth-page) .auth-page,
+  .register-page .auth-page{
+    min-height:100dvh;
+    height:auto;
+    padding:4.75rem .75rem 1.25rem;
+    align-items:flex-start;
+    overflow:visible;
+  }
+  body:has(.auth-page) .auth-card{
+    margin:0;
+  }
+  .register-page .auth-card{
+    max-height:none;
+    overflow:visible;
   }
 }

@@ -392,9 +392,6 @@
   });
 
   /* =================== DIRECTION TOGGLE =================== */
-  var SVG_LTR = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 4h18v2H3zm0 5h12v2H3zm0 5h18v2H3zm0 5h10v2H3zm15-4.5V13h-4v-2h4V8.5l4.5 4.5z"/></svg>';
-  var SVG_RTL = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 4h18v2H3zm6 5h12v2H9zm-6 5h18v2H3zm11 5h7v2h-7zM6 14.5l-4.5-4.5L6 5.5V8h4v2H6z"/></svg>';
-
   function applyDir(dir) {
     // 1. Temporarily disable transitions on main-nav and mobile-overlay to prevent sliding glitches
     if (mainNav) mainNav.style.transition = 'none';
@@ -406,7 +403,7 @@
 
     // 3. Update all direction toggle button icons/labels
     qsa('[data-dir-toggle]').forEach(function(btn) {
-      btn.innerHTML = dir === 'rtl' ? SVG_LTR : SVG_RTL;
+      btn.innerHTML = dir === 'rtl' ? '<span style="font-family:var(--font-sans);font-weight:700;font-size:0.75rem;letter-spacing:0.02em">LTR</span>' : '<span style="font-family:var(--font-sans);font-weight:700;font-size:0.75rem;letter-spacing:0.02em">RTL</span>';
       btn.setAttribute('aria-label', dir === 'rtl' ? 'Switch to LTR' : 'Switch to RTL');
       btn.title = dir === 'rtl' ? 'Switch to LTR' : 'Switch to RTL';
     });

@@ -806,6 +806,19 @@ html[dir="rtl"] .nav-link::after{transform-origin:right;}
 .img-wide.no-radius{border-radius:0}
 .img-caption{text-align:center;font-family:var(--font-sans);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--brown-100);margin-top:.75rem}
 
+/* Keep the farm caption outside the cropped panoramic image. */
+#farm-panoramic .img-wide{
+  aspect-ratio:auto;
+  overflow:visible;
+  border-radius:0;
+  margin-bottom:var(--space-md);
+}
+#farm-panoramic .img-wide img{
+  aspect-ratio:16/5;
+  object-fit:cover;
+  border-radius:var(--r-md);
+}
+
 /* Home 2 journey image: keep the caption outside the cropped image area. */
 #how-it-works .journey-image{
   aspect-ratio:auto;
@@ -1316,6 +1329,8 @@ html[dir="rtl"] .nav-link::after{transform-origin:right;}
   }
   .back-to-top{bottom:1.25rem;inset-inline-end:1.25rem;width:40px;height:40px}
   .img-wide.aspect-16-6,.img-wide.aspect-16-5{aspect-ratio:4/3}
+  #farm-panoramic .img-wide{aspect-ratio:auto}
+  #farm-panoramic .img-wide img{aspect-ratio:4/3}
   #how-it-works .journey-image{aspect-ratio:auto}
   #how-it-works .journey-image img{aspect-ratio:4/3}
   .nl-form-row{flex-direction:column}
